@@ -8,7 +8,7 @@
  */
 .pgwSlideshow {
     width: 100%;
-    background: #333;
+    background: #fff;
     display: none;
 }
 
@@ -21,6 +21,13 @@
     position: relative;
     min-height: 150px;
     overflow: hidden;
+    max-width: 900px;
+    margin: auto;
+}
+
+.pgwSlideshow .ps-current > ul {
+    padding: 0;
+    wi
 }
 
 .pgwSlideshow .ps-current > ul  > li {
@@ -34,7 +41,7 @@
 .pgwSlideshow .ps-current > ul  > li img {
     text-align: center;
     display: block;
-    max-width: 100%;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -59,9 +66,12 @@
 }
 
 .pgwSlideshow .ps-list {
-    background: #555;
+    background: #fff;
     overflow: hidden;
     position: relative;
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
 }
 
 .pgwSlideshow .ps-list ul {
@@ -85,7 +95,6 @@
 
 .pgwSlideshow .ps-list li img {
     display: block;
-    border: 1px solid #777;
     width: 80px;
     height: 80px;
 }
@@ -93,12 +102,7 @@
 .pgwSlideshow .ps-list li .ps-item.ps-selected {
     float: left;
     opacity: 1;
-    border: 4px solid #fff;
     overflow: hidden;
-}
-
-.pgwSlideshow .ps-list li .ps-item.ps-selected img {
-    margin: -4px;
 }
 
 .pgwSlideshow .ps-prevIcon {
