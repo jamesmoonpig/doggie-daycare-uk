@@ -27,7 +27,7 @@
 
 .pgwSlideshow .ps-current > ul {
     padding: 0;
-    wi
+    width: 100%;
 }
 
 .pgwSlideshow .ps-current > ul  > li {
@@ -41,7 +41,7 @@
 .pgwSlideshow .ps-current > ul  > li img {
     text-align: center;
     display: block;
-    max-width: 900px;
+    width: 100%;
     margin: auto;
 }
 
@@ -71,7 +71,7 @@
     position: relative;
     max-width: 900px;
     text-align: center;
-    margin: auto;
+    margin: 10px auto 0px auto;
 }
 
 .pgwSlideshow .ps-list ul {
@@ -88,14 +88,14 @@
 
 .pgwSlideshow .ps-list li .ps-item {
     display: block;
-    margin: 15px 8px;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    margin: 0px 1px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 .pgwSlideshow .ps-list li img {
     display: block;
-    width: 80px;
+    width: auto;
     height: 80px;
 }
 
@@ -158,7 +158,7 @@
     cursor: pointer;
     position: absolute;
     left: 0;
-    top: 25px;
+    top: 9px;
     z-index: 1000;
     display: none;
 }
@@ -174,7 +174,7 @@
     cursor: pointer;
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 9px;
     z-index: 1000;
     display: none;
 }

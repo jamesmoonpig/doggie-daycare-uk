@@ -47,7 +47,7 @@
 
         // Init
         var init = function() {
-
+            
             // Merge user options with the default configuration
             pgwSlideshow.config = $.extend({}, defaults, options);
 
@@ -134,6 +134,12 @@
                 pgwSlideshow.plugin.find('.ps-list').find('.ps-prev, .ps-next').remove();
             } else {
                 pgwSlideshow.plugin.addClass('wide').removeClass('narrow');
+                
+                if(!pgwSlideshow.plugin.find('.ps-list').find('.ps-prev, .ps-next').length > 0)
+                {
+                    pgwSlideshow.plugin.find('.ps-list').prepend('<span class="ps-prev"><span class="ps-prevIcon"></span></span>');
+                    pgwSlideshow.plugin.find('.ps-list').append('<span class="ps-next"><span class="ps-nextIcon"></span></span>');
+                }
             }
 
             return true;
