@@ -16,8 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="css/doggie-daycare-main.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/newsletter.css">
-    <link rel="stylesheet" href="css/contact.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -191,7 +189,7 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="newsletter" id="newsletter">
+    <section class="form-section newsletter" id="newsletter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -201,7 +199,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form name="form-newsletter" id="form-newsletter" method="post" action="/php/newsletter.php">
+                    <form name="form-newsletter" class="form-newsletter" method="post" action="/php/newsletter.php">
                         <input name="nlname" type="text" placeholder="Name">
                         <p id="name-validation-newsletter"></p>
                         <input name="nlemail" type="text" placeholder="Email">
@@ -216,7 +214,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="form-section contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -234,7 +232,7 @@
                             <p id="email-validation-contact"></p>
                             <input name="iphone" type="text" placeholder="Telephone">
                             <p id="phone-validation-contact"></p>
-                            <textarea name="imessage" type="text" placeholder="Message" rows="10"></textarea>
+                            <textarea id="contact-message" name="imessage" type="text" placeholder="Message" rows="10"></textarea>
                             <p id="message-validation-contact"></p>
                         </fieldset>
                         <div class="row text-center">
