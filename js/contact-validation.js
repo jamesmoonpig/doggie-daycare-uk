@@ -8,7 +8,7 @@ $("#submit-contact").click(function(event) {
         $('#success-container-contact').fadeOut(500);
 
         setTimeout(function() {
-            document.getElementById("success-container-contact").innerHTML = "Thank you for your submission";
+            document.getElementById("success-container-contact").innerHTML = "Thanks! We'll be in touch very soon.";
         }, 500);
 
         $('#success-container-contact').fadeIn(500);
