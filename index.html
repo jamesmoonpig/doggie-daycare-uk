@@ -272,16 +272,24 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 text-center">
-                    <img src="/img/partners/partner-one-bw.jpg" alt="The Good Dog Guide">
+                    <a href="http://www.thegooddogguide.com/" onMouseOver="document.partnerOne.src='img/partners/partner-one.jpg';" onMouseOut="document.partnerOne.src='img/partners/partner-one-bw.jpg';">
+                        <img src="img/partners/partner-one-bw.jpg" name="partnerOne">
+                    </a>
                 </div>
                 <div class="col-lg-3 text-center">
-                    <img src="img/partners/partner-two-bw.jpg" alt="The Dog Walking Guide">
+                    <a href="http://www.ndwr.co.uk/" onMouseOver="document.partnerTwo.src='img/partners/partner-two.jpg';" onMouseOut="document.partnerTwo.src='img/partners/partner-two-bw.jpg';">
+                        <img src="img/partners/partner-two-bw.jpg" name="partnerTwo">
+                    </a>
                 </div>
                 <div class="col-lg-3 text-center">
-                    <img src="img/partners/partner-three-bw.jpg" alt="Pet Plan">
+                    <a href="http://www.petplan.co.uk/" onMouseOver="document.partnerThree.src='img/partners/partner-three.jpg';" onMouseOut="document.partnerThree.src='img/partners/partner-three-bw.jpg';">
+                        <img src="img/partners/partner-three-bw.jpg" name="partnerThree">
+                    </a>
                 </div>
                 <div class="col-lg-3 text-center">
-                    <img src="img/partners/partner-four-bw.jpg" alt="Online Acadamies">
+                    <a href="https://www.onlineacademies.co.uk/" onMouseOver="document.partnerFour.src='img/partners/partner-four.jpg';" onMouseOut="document.partnerFour.src='img/partners/partner-four-bw.jpg';">
+                        <img src="img/partners/partner-four-bw.jpg" name="partnerFour">
+                    </a>
                 </div>
             </div>
         </div>
@@ -359,7 +367,7 @@
     <script src="js/pgwslideshow.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow();
             pgwSlideshow.trans
         });
